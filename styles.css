@@ -1,0 +1,261 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/*header styles*/
+.navbar, .header{
+    display: flex;
+}
+.navbar li{
+    list-style-type: none;
+   padding: 10px 20px;
+}
+.navbar li:hover .course-list {
+    background-color: #F2EFE5;
+    display: block;
+    position: fixed;
+    padding-top:10px ;
+}
+.navbar li:hover .campus {
+    background-color: #F2EFE5;
+    display: block;
+    position: fixed;
+    padding-top:10px ;
+}
+.navbar li a{
+    text-decoration: none;
+    color: black;
+}
+.header{
+    align-items: center;
+    justify-content: space-between;
+    background-color: #C7C8CC;
+}
+.course-list{
+    display: none;
+}
+.campus{
+    display: none;
+}
+/*header styles*/
+/*banner styles*/
+.banner{
+    color: white;
+    font-size: 20px;
+    background-size: cover;
+}
+.banner-info{
+    padding: 100px;
+}
+.banner-title{
+    padding: 10px;
+}
+.info{
+    width: 50%;
+    padding-top: 10px;
+}
+.stars i{
+    color: gold;
+}
+.rating{
+    display: flex;
+} 
+.stars{
+    padding-right:50px;
+}
+.description{
+    display :flex;
+    padding: 0px 70px;
+}
+.description-block{
+    padding: 10px;
+    border-radius: 50px;
+    text-align: center;
+    flex: 25%;
+    box-shadow: 10px 10px 20px black;
+    background-color: white; 
+    margin: 0px -5px;
+}
+.description-block p , .description-block h2{
+    color: black;
+}
+/*banner styles*/
+
+/*services style*/
+.services h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    border-radius: 20px;
+    padding-top:20px ;
+}
+.services-types{
+    display: flex; 
+    padding: 20px;
+    
+}
+
+.services-block{
+    display: flex;
+    flex-wrap:wrap;
+    flex: 33.33%;
+    padding: 50px 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 100px ;
+    box-shadow: 5px 5px 10px black;
+    background-color:#F2EFE5;
+}
+.service-info{
+    width: 50%;
+    padding-left: 10px;
+}
+.services{
+    background-color: #E3E1D9;
+}
+/*services style*/
+
+/*featutes styles*/
+
+
+.features-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    border-radius: 20px;
+}
+.features{
+    display: flex;
+}
+#features{
+    background-color: #F2EFE5;
+    padding: 0px;
+    margin: 0px;
+}
+.features-block{
+    display: flex;
+    flex-direction: column;
+    flex: 33.33%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    
+}
+.features-block h3{
+    margin-top: 10px;
+}
+/*featutes styles*/ 
+
+/*footer*/
+
+.connect-page{
+    padding: 0px 30px;
+}
+
+.connect-list li{
+    padding: 10px;
+    list-style-type: none;
+}
+.connect-list a{
+    text-decoration: none;
+    color: black;
+}
+.help-page{
+    padding: 0px 30px;
+}
+.help-list li{
+    padding: 10px;
+    list-style-type: none;
+}
+.help-list a{
+    text-decoration: none;
+    color: black;
+}
+.footer{
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+}
+#footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #B4B4B8;
+    align-items: center;
+}
+.copyright{
+    padding: 20px;
+}
+
+/*footer*/
+
+/*media queries*/
+@media (max-width:650px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .banner-info h1{
+        font-size: 40px;
+    }
+    .rating{
+        flex-direction: column;
+    }
+    .info{
+        width: 100%;
+    }
+    .description{
+        flex-direction: column;
+    }
+    .description-block{
+        justify-content: center;
+        align-items: center;
+    }
+    .services-types{
+        flex-direction: column;
+        padding: 0px;
+    }
+    .features{
+        display: flex;
+        flex-direction: column;
+    }
+    .help-page{
+        width: 50%;
+    }
+
+}
+@media (min-width:651px) and (max-width:980px){
+    .header{
+       flex-direction: column; 
+    }
+    .info{
+        width: 100%;
+    }
+    .description-block{
+        padding: 20px;
+        margin: 10px;
+    }
+    .description{
+        display: flex;
+        flex-direction: column;
+    }
+    .services-types{
+        flex-direction: column;
+        padding: 0px;
+    }
+    .features{
+        display: flex;
+        flex-direction: column;
+    }
+} 
+/*media queries*/
+
+

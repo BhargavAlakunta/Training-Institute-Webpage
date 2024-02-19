@@ -1,0 +1,114 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/*header styles*/
+.navbar, .header{
+    display: flex;
+}
+.navbar li{
+    list-style-type: none;
+   padding: 10px 20px;
+}
+.navbar li:hover .course-list {
+    background-color: #F2EFE5;
+    display: block;
+    position: fixed;
+    padding-top:10px ;
+}
+.navbar li:hover .campus {
+    background-color: #F2EFE5;
+    display: block;
+    position: fixed;
+    padding-top:10px ;
+}
+.navbar li a{
+    text-decoration: none;
+    color: black;
+}
+.header{
+    align-items: center;
+    justify-content: space-between;
+    box-shadow:5px 5px 10px rgb(5, 5, 37);
+    background-color: #C7C8CC;
+}
+.course-list{
+    display: none;
+}
+.campus{
+    display: none;
+}
+/*header styles*/
+/*contact us styles*/
+
+.contactus h1{
+    padding: 20px;
+}
+.contactus-main{
+    padding: 20px;
+    background-color: #F2EFE5;
+}
+.address{
+    padding: 15px;
+}
+/*contact us styles*/
+
+/*footer*/
+
+.connect-page{
+    padding: 0px 30px;
+}
+
+.connect-list li{
+    padding: 10px;
+    list-style-type: none;
+}
+.connect-list a{
+    text-decoration: none;
+    color: black;
+}
+.help-page{
+    padding: 0px 30px;
+}
+.help-list li{
+    padding: 10px;
+    list-style-type: none;
+}
+.help-list a{
+    text-decoration: none;
+    color: black;
+}
+.footer{
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+}
+#footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #B4B4B8;
+    align-items: center;
+}
+.copyright{
+    padding: 20px;
+}
+
+/*footer*/
+/*media queries*/
+@media (max-width:650px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+}
+@media (min-width:651px) and (max-width:980px){
+    .header{
+       flex-direction: column; 
+    }
+}
+
+/*contact us styles*/
